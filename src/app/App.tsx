@@ -810,9 +810,11 @@ function ContactSection() {
 
         {/* Footer */}
         <div className="mt-16 pt-8 border-t-2 border-[rgba(255,255,255,0.3)] flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-xs font-[DM_Mono] text-white opacity-80">
-            © 2024 Đặng Nguyễn Bá Hưng (Edward) · Marketer Hiện đại 360°
-          </p>
+          <div className="flex flex-col sm:flex-row items-center gap-1 sm:gap-2 text-xs font-[DM_Mono] text-white opacity-85 text-center sm:text-left">
+            <span>© 2024 Đặng Nguyễn Bá Hưng (Edward) · Marketer Hiện đại 360°</span>
+            <span className="hidden sm:inline opacity-60">|</span>
+            <span className="font-semibold text-white tracking-wide">Bản quyền © JAThong</span>
+          </div>
           <div className="flex items-center gap-2">
             {["FMCG", "BEAUTY", "GEN Z", "DIGITAL"].map((tag) => (
               <span key={tag} className="text-[11px] font-[DM_Mono] font-bold px-2 py-1 rounded border-2 border-[rgba(255,255,255,0.4)] text-white">
